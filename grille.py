@@ -16,6 +16,14 @@ class Grille:
         idx = self._index(ligne, colonne)
         self.grille[idx] = touche
 
+    def __str__(self):
+        lignes = []
+        for i in range(self.n_ligne):
+            row = self.grille[i*self.n_colonne:(i+1)*self.n_colonne]
+            lignes.append(''.join(row))
+        return '\n'.join(lignes)
+
+
 
 
 

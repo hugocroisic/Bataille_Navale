@@ -17,3 +17,9 @@ def test_tirer_hors_grille():
         assert False, "IndexError attendu"
     except IndexError:
         pass
+    
+def test_str():
+    g = Grille(2, 3)
+    assert str(g) == "∿∿∿\n∿∿∿"
+    g.tirer(1, 1)
+    assert str(g) == "∿∿∿\n∿x∿"
