@@ -19,10 +19,10 @@ class Bateau:
                 for i in range(self.longueur)
             ]
         
-    def coule(self, grille) -> bool:
+    def coule(self, grille):
         for (l, c) in self.positions:
-            # si une case du bateau n'est pas marquée comme tirée, il flotte encore
-            if grille.grille[grille._index(l, c)] != grille.frappe:
+            ch = grille.grille[grille._index(l, c)]
+            if ch != grille.frappe:  
                 return False
         return True
     

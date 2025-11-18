@@ -1,5 +1,5 @@
-from grille import Grille
-from bateau import Bateau
+from src.bnav.grille import Grille
+from src.bnav.bateau import Bateau
 
 def test_constructeur():
     g = Grille(5, 8)

@@ -1,6 +1,6 @@
-from grille import Grille
-from bateau import Bateau, chevauchent
-from bateau import PorteAvion, Croiseur, Torpilleur, SousMarin
+from src.bnav.grille import Grille
+from src.bnav.bateau import Bateau, chevauchent
+from src.bnav.bateau import PorteAvion, Croiseur, Torpilleur, SousMarin
 
 def test_bateau_defaut():
     b = Bateau(2, 3)
